@@ -71,20 +71,20 @@ install the dependency for you:
 sudo apt-get -f install
 ```
 
-## Linux Mint
+## Linux Mint & elementaryOS
 
-Brave does not currently support an apt repository for Linux Mint directly, but
-you can use the corresponding Ubuntu package. Using the lsb\_release method
+Brave does not currently support an apt repository for Linux Mint, or elementaryOS directly,
+but you can use the corresponding Ubuntu package. Using the lsb\_release method
 above will return an error during `apt update`.
 
-For Sarah, Serena and Sonya:
+For Sarah, Serena, Sonya and Loki:
 
 ```
 curl https://s3-us-west-2.amazonaws.com/brave-apt/keys.asc | sudo apt-key add -
 echo "deb [arch=amd64] https://s3-us-west-2.amazonaws.com/brave-apt xenial main" | sudo tee -a /etc/apt/sources.list.d/brave-xenial.list
 ```
 
-Or for Qiana, Rebecca, Rafaela and Rosa:
+Or for Qiana, Rebecca, Rafaela, Rosa and Freya:
 
 ```
 curl https://s3-us-west-2.amazonaws.com/brave-apt/keys.asc | sudo apt-key add -
